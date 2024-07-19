@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia HTML</title>
+</head>
+<body>
+    <H1>Multimedia HTML</H1>
+    <!-- attributes -->
+     <!-- 
+           key="value"
+           key
+           <tag key="value"> --- opening tag
+            ...content
+           </tag> --- closing tag
+     -->
+
+     <!-- Images -->
+      <!-- <img
+               src="image-path" 
+               alt="alternative-text"
+      
+      > self closing tag
+       
+      --> 
+      <!-- 
+      Three types of image path
+      1. Absolute path - core path
+      2. Relative path
+      3. external resources
+      -->
+        <h2>Image tag</h2>
+        <h3>Relative path</h3>
+        <img src="./images/git-workflow.png" alt="git workflow" height="500" width="500">
+
+        <hr>
+        <h3>External resources</h3>
+        <img src="https://th.bing.com/th/id/OIP.kUW04gv7eKnBKW769pfqLAHaNK?rs=1&pid=ImgDetMain" alt="cat-image">
+
+        <!-- 
+            .jpg or jpeg ---- images with complex colours
+            .png         ---- images with little coulour sharp text
+            .tif or .tiff ---- images with high quality
+        -->
+
+    <hr>
+       <h2>Audion tag</h2>
+       <!-- 
+            <audio>
+                 <source src="audio-path" type="audio/mp3" >
+                 <source src="audio-path" type="audio/ogg" >
+                 <source src="audio-path" type="audio/raw" >
+            </audio>    
+
+            <audio src="audioi-path" type="audio/mp3" >
+       -->
+        
+       <audio controls>
+        <source src="./audio/Free_Test_Data_1MB_MP3.mp3" type="audio/mp3">
+       </audio>
+
+
+       <hr>
+
+       <h2>Video Tags</h2>
+       <!-- 
+             <video>
+                 <source src="video-path" type="video/mp4" >
+                 <source src="video-path" type="video/mov" >
+                 <source src="video-path" type="video/someformate" >
+            </video> 
+       -->
+
+       <video controls>
+        <source src="./video/SampleVideo_1280x720_2mb.mp4" type="video/mp4">
+       </video>
+</body>
+</html>

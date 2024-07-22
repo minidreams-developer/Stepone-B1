@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tables</title>
+</head>
+<body>
+    <h1>HTML TABLES</h1>
+    <!-- 
+    1. Layout---
+
+    ALT + SHIFT + ARROW-DOWN
+    <table>
+            <tr>
+                <td>.....</td>
+                <td>.....</td>
+                <td>.....</td>
+                <td>.....</td>
+            </tr>
+            <tr>
+                <td>.....</td>
+                <td>.....</td>
+                <td>.....</td>
+                <td>.....</td>
+            </tr>
+            <tr>
+                <td>.....</td>
+                <td>.....</td>
+                <td>.....</td>
+                <td>.....</td>
+            </tr>
+    </table>    
+    -->
+
+    <!-- 
+        1. border
+        2. width
+        3. cell padding
+        4. cellspacing
+        5. rowspan
+        6. colspan
+    
+    -->
+
+    <table border="1" cellspacing="15px" cellpadding="15px">
+        <tr>
+            <td colspan="2">Name & age</td>
+            <!-- <td>Age</td> -->
+            <td>City</td>
+        </tr>
+        <tr>
+            <td colspan="2">Arun & 25</td>
+            <!-- <td>25</td> -->
+            <td rowspan="3">Tirupur</td>
+        </tr>
+        <tr>
+            <td>Prince</td>
+            <td>25</td>
+            <!-- <td>Coimbatore</td> -->
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>30</td>
+            <!-- <td>Madras</td> -->
+        </tr>
+    </table>
+
+
+    <!-- Rowspan and columnspan -->
+     <h2>Rowspan & columnspan</h2>
+     <table border="1">
+
+        <tr>
+            <td colspan="2">Name and Age</td>
+            <td>City</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>25</td>
+            <td rowspan="2">Tirupur and Coimbatore</td>
+        </tr>
+        <tr>
+            <td>Prince</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+
+    <!-- 
+    <thead>
+    <tbody>
+    <tfoot>
+
+        <th>......<th>
+    -->
+        <h2>Semantic tags</h2>
+        <table border="1" cellpadding="15px">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arun</td>
+                    <td>25</td>
+                    <td>Tirupur</td>
+                </tr>
+                <tr>
+                    <td>Prince</td>
+                    <td>25</td>
+                    <td>Coimbatore</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <!-- Forms signin or signup -->
+         <!-- how to host our website? -->
+    
+</body>
+</html>

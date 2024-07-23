@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+
+</head>
+<body>
+    <h1>HTML forms</h1>
+
+    <!-- 
+        <forms action="result.html" method="POST">
+            1. <lable for="">......</label> inline elements
+            2. <input type="" id="" placeholder="placeholder text">......</input>
+        </forms>
+    -->
+<form action="result.html">
+
+    <!-- type text -->
+     <fieldset>
+        <legend>UserInput</legend>
+    
+     <p>
+        <label for="firstName">Firstname:</label> 
+        <input type="text" id="firstName" name="firstName" placeholder="enter your firstName" minlength="3" maxlength="10" >
+     </p>
+      
+        <p> 
+            <!-- type number -->
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="age" placeholder="Enter your age" min="18" max="100">
+
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="Email" id="email" placeholder="Enter your email">
+        </p>
+        <p>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" placeholder="enter your password">
+        </p>
+        <p>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+        </p>
+        <p>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+        </p>
+
+        <p>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="gender-male"><span>Male</span>
+            <input type="radio" name="gender" id="gender-female"><span>Female</span>
+            <input type="radio" name="gender" id="gender-others"><span>Others</span>
+        </p>
+
+        <p>
+            <label for="subjects">Select Subjects</label>
+            <select name="subjects" id="subjects">
+                <option value="English">English</option>
+                <option value="Maths">Maths</option>
+                <option value="Physics">Physics</option>
+                <option value="chemistry">chemistry</option>
+
+            </select>
+        </p>
+
+    </fieldset>
+
+    <fieldset>
+<legend>Submit Form</legend>
+   
+        <p><input type="submit"> <input type="reset"></p>
+
+    </fieldset>
+
+</form>
+
+<!-- 
+{
+    firstname: Prince,
+    age: 25,
+    email: itsme@arunprince.com
+    subjects:physicssssss
+}
+
+-->
+
+
+
+
+</body>
+</html>

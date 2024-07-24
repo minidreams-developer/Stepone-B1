@@ -1,0 +1,47 @@
+/* universal selectors */
+* {
+  /* color: blue; */
+}
+
+/* id selector */
+#unique {
+  background-color: yellow;
+}
+
+h2 {
+  color: aquamarine;
+}
+/* class selectors */
+.highlight {
+  font-weight: bold;
+}
+
+/* Type selectors */
+p {
+  /* color: red; */
+}
+
+/* Attribute selectors */
+[type="email"] {
+  border: 5px solid red;
+}
+
+/* Descendant Selectors */
+div p {
+  /* color: green; */
+}
+
+/* Child Selectors */
+div > p {
+  color: purple;
+}
+
+/* Adjacent Sibling Selector */
+h3 + p {
+  /* color: chocolate; */
+}
+
+/* General Sibling selectors */
+.general ~ p {
+  text-decoration: underline;
+}

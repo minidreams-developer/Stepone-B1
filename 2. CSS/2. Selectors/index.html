@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Demo</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      h2 {
+        color: blue;
+      }
+    </style>
+
+    <!-- specificity -->
+    <!-- 
+      1. InlineCSS
+      2. internal/external
+     -->
+
+    <!-- Selectors specificity -->
+    <!-- 
+        1. ID
+        2. class, attributes,
+        3. type
+      -->
+  </head>
+  <body>
+    <!-- 
+        1. universal selectors => it selects all the elements
+        2. Type selectors => selects the particular elements
+        3. ID selectors => selects that particular id
+        4. class selectors => selects group of elements based on class.
+        5. Descendant selectors => it selects all the descendants
+        6. child Selectors => it selects all the childs
+        7. Attribute selectors => select based on attributes
+        8. Adjacent Sibling => immediate followed by element
+        9. general sibling => all the sibling element
+     -->
+    <!-- Type Selector Section -->
+    <section>
+      <h2>Type Selector</h2>
+      <p>This paragraph is styled using a type selector.</p>
+      <p>Another paragraph styled using the same type selector.</p>
+    </section>
+
+    <!-- ID Selector Section -->
+    <section>
+      <h2>ID Selector</h2>
+      <p id="unique">This paragraph is styled using an ID selector.</p>
+    </section>
+
+    <!-- Class Selector Section -->
+    <section>
+      <h2>Class Selector</h2>
+      <p class="highlight">This paragraph is styled using a class selector.</p>
+      <p class="highlight">
+        Another paragraph styled using the same class selector.
+      </p>
+    </section>
+
+    <!-- Attribute Selector Section -->
+    <section>
+      <h2>Attribute Selector</h2>
+      <p data-type="example">
+        This paragraph is styled using an attribute selector.
+      </p>
+      <p>
+        <label for="firstName">FirstName:</label>
+        <input type="text" name="firstName" id="firstName" />
+      </p>
+      <p>
+        <label for="number">Number:</label>
+        <input type="number" name="number" id="number" />
+      </p>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+      </p>
+    </section>
+
+    <!-- Descendant Selector Section -->
+    <section class="descendant">
+      <h2>Descendant Selector</h2>
+      <div>
+        <p>This paragraph is a descendant of div.</p>
+        <section>
+          <p>This paragraph is also a descendant of div.</p>
+        </section>
+      </div>
+    </section>
+
+    <!-- Child Selector Section -->
+    <section class="child">
+      <h2>Child Selector</h2>
+      <div>
+        <p>This paragraph is a direct child of div.</p>
+        <section>
+          <p>This paragraph is not a direct child of div.</p>
+        </section>
+      </div>
+    </section>
+
+    <!-- Adjacent Sibling Selector Section -->
+    <section>
+      <h2>Adjacent Sibling Selector</h2>
+      <h3 class="adjacent">Heading</h3>
+      <p>
+        This paragraph immediately follows the heading and is styled using an
+        adjacent sibling selector.
+      </p>
+      <p>This paragraph does not immediately follow the heading.</p>
+    </section>
+
+    <!-- General Sibling Selector Section -->
+    <section>
+      <h2>General Sibling Selector</h2>
+      <h3 class="general">Heading</h3>
+      <p>This paragraph is a general sibling of the heading.</p>
+      <div>Some div content.</div>
+      <p>This paragraph is also a general sibling of the heading.</p>
+    </section>
+  </body>
+</html>

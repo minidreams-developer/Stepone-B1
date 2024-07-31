@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css-Box-Model</title>
+    <style>
+      h1 {
+        background-color: red;
+        /* border: 10px; */
+        border: 10px solid black;
+        /* border: width style color */
+        /* border-width: 10px;
+        border-color: black;
+        border-style: double; */
+        padding: 50px;
+        /* padding: top, right, bottom, left */
+        /* margin: top, right, bottom, left */
+        /* border: top, right, bottom, left */
+        margin-bottom: 50px;
+        /* box-sizing: content-box; */
+        box-sizing: border-box;
+      }
+
+      /* 
+       height => top and bottom
+       width => right to left
+      
+       height => content height + padding top & bottom + border top & bottom
+
+       width => content width + padding right & left + border right & left
+      */
+    </style>
+  </head>
+  <body>
+    <h1>Content</h1>
+    <h1>Second content</h1>
+  </body>
+</html>

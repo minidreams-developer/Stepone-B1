@@ -6,6 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="Display" />
     <title>Display Properties</title>
+    <!-- 
+      1. Block level - takes full width, can add width & height
+      2. Inline level - takes only content with, cannot manipulate height& width
+      3. inline-block
+      4. hidden
+      5. none
+    -->
+    <style>
+      /* converting Inline element into block */
+      .block {
+        background-color: red;
+        display: block;
+        height: 100px;
+      }
+
+      /* converting block element into inline */
+      /* .inline {
+        background-color: green;
+        display: inline;
+        height: 100px;
+      } */
+
+      /* converting to inline & keeping the block level behavior */
+      .inline-block {
+        background-color: aqua;
+        display: inline-block;
+        height: 100px;
+        width: 300px;
+      }
+      .hidden {
+        height: 100px;
+        background-color: brown;
+        visibility: hidden;
+      }
+      .none {
+        height: 100px;
+        background-color: cornflowerblue;
+        /* visibility: hidden; */
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -13,6 +54,7 @@
     <span class="block"
       >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
       distinctio?</span
+    ><span>------HelloHai</span>
     >
     <h2 class="inline inline-block">Sub Heading</h2>
     <div class="none"></div>

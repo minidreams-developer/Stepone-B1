@@ -6,6 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="CSS - BG - Images" />
     <title>CSS - BG - Images</title>
+    <!-- 
+        CSS - Background
+        1. background-image
+        2. background-repeat
+        3. background-position
+        4. background-size
+        5. background-attachment
+        
+        shorthand property
+    -->
+    <!-- 1. Background-image  => background: url("image-path") -->
+    <!-- 2. Background repeat => background-repeat: 
+                                        i) repeat
+                                        ii) repeat-x
+                                        iii) repeat-y
+                                        iv) no-repeat
+                                         -->
+    <!-- 3. Background-position  => background-position: left or right or bottom or top or center -->
+    <!-- 4. Background-size  =>background-size: auto or cover or contain -->
+    <!--5. Background-attachment => background-attachment: scroll or fixed -->
+
+    <!-- Short hand
+        
+    background: [background-color] [background-image] [background-repeat] [background-attachment] [background-position]/[background-size]
+    
+    
+    -->
+    <style>
+      /* .image-one {
+        height: 1000px;
+        background: url("images/richard-feyman.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+        background-color: red;
+      } */
+      .image-one {
+        height: 1000px;
+        background: red url("images/richard-feyman.jpg") no-repeat fixed
+          center/contain;
+      }
+    </style>
   </head>
 
   <body>

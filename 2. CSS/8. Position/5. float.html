@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="CSS - Float" />
+    <title>CSS - Float</title>
+    <style>
+      /* 
+      float: right, left
+      */
+      /* img {
+        height: 100px;
+        width: 100px;
+      } */
+      div {
+        border: 2px solid red;
+        background-color: gray;
+      }
+      .one {
+        float: left;
+      }
+      .two {
+        float: right;
+      }
+      .one,
+      .two {
+        height: 200px;
+        width: 400px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <p>
+        <img src="./images/20200909_000132.jpg" alt="image-one" class="one" />
+      </p>
+      <p><img src="./images/image1.jpg" alt="image-two" class="two" /></p>
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi porro
+        ut vel, voluptates recusandae quas illo amet facilis cupiditate!
+        Officiis voluptatum molestiae, temporibus neque corporis commodi
+        necessitatibus ullam qui delectus!
+      </p>
+    </div>
+  </body>
+</html>

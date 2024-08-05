@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Transform" />
+    <title>Transform</title>
+    <!-- Transform
+     1. Translate
+     2. scale
+     3. Rotate
+     4. Skew
+    -->
+
+    <!-- 
+    1. Translate => move things in horizontal & vertical line
+    syntax:
+          transform: translate(x, y) shorthand property
+          transform: translateX() 
+          transform: translateY() 
+                    x => horizontal distance ( px, %, em) also can either positive or negative.
+                    y => vertical distance ( px, %, em) also can either positive or negative.
+    -->
+    <style>
+      .transform {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+      }
+      .transform:hover {
+        transform: translateY(200px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="transform">
+      <h1>Heading</h1>
+    </div>
+  </body>
+</html>

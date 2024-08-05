@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic styling</title>
+    <style>
+      .parent {
+        height: 500px;
+        width: 600px;
+        /* position: relative;
+        top: 100px;
+        left: 300px; */
+        /* border: 2px solid red; */
+      }
+      .box {
+        height: 480px;
+        width: 30%;
+        /* border: 2px solid black; */
+        display: inline-block;
+        margin-left: 10px;
+      }
+      .box2 {
+        height: 150px;
+        width: 95%;
+        border: 2px solid blue;
+        background-color: bisque;
+      }
+      .one-one {
+        margin-top: 90%;
+      }
+      .two-one {
+        margin-top: 47%;
+        margin-bottom: 20px;
+      }
+      .three-one {
+        margin-top: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="one box">
+        <div class="one-one box2"></div>
+      </div>
+      <div class="two box">
+        <div class="two-one box2"></div>
+        <div class="two-two box2"></div>
+      </div>
+      <div class="three box">
+        <div class="three-one box2"></div>
+      </div>
+    </div>
+  </body>
+</html>

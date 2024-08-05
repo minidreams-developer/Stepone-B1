@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Transform : Scale" />
+    <title>Transform: Scale</title>
+
+    <!--  Scale 
+      will be streched or increase it sizes 
+    Syntax
+        transform:scale(x, y)
+              x => greater than 1, size will be increased. if value between 0 to 1 size will be reduced.
+              y => same as above. if we omitted the value, x value will be taken.
+    -->
+    <style>
+      .scale {
+        height: 200px;
+        width: 200px;
+        background-color: bisque;
+        margin: 0 auto;
+      }
+      .scale:hover {
+        transform: scaleX(1.7);
+        /* transform: translateX(100px); */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="scale">
+      <h1>Heading</h1>
+    </div>
+  </body>
+</html>

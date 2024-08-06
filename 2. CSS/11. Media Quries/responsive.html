@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="CSS - Position" />
+    <title>CSS - Media Quires</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        height: 100vh;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        margin: 10px;
+      }
+      .one {
+        background-color: red;
+      }
+      .two {
+        background-color: blue;
+      }
+      .three {
+        background-color: green;
+      }
+      .four {
+        background-color: purple;
+      }
+
+      /* Mobile */
+      @media screen and (max-width: 599px) {
+        .container {
+          flex-direction: column;
+        }
+        .box {
+          width: 80%;
+          height: 80%;
+        }
+      }
+
+      /* Tablet */
+      @media screen and (min-width: 600px) and (max-width: 899px) {
+        .container {
+          flex-direction: row;
+        }
+        .box {
+          width: 45%;
+          height: 100px;
+        }
+      }
+
+      /* laptop */
+      @media screen and (min-width: 900px) and (max-width: 1199) {
+        .container {
+          flex-direction: row;
+        }
+        .box {
+          width: 30%;
+          height: 200px;
+        }
+      }
+
+      /* larger screens */
+      @media screen and (min-width: 1200px) {
+        .container {
+          flex-direction: row;
+        }
+        .box {
+          width: 20%;
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box one">1</div>
+      <div class="box two">2</div>
+      <div class="box three">3</div>
+      <div class="box four">4</div>
+    </div>
+  </body>
+</html>

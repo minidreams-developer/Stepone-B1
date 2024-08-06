@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Media Quires</title>
+    <!-- 
+        1. Breaking points
+         i) extra small screens  600px and below;
+         ii) small screens  => 600px - 768px;
+         iii) medium device => 768px - 992px;
+         iv) large devices => 992px - 1200px;
+         v) extra large devices => 1200px - max;
+    -->
+    <style>
+      /* 
+        syntax
+              @media 'media-type' and (media-feature){
+              
+              our usual css styling
+              
+              }
+      
+              media-type: screen, print, all
+              media-feature: max and min width
+                             max and min height
+     
+     */
+
+      /* Mobile devices */
+      @media screen and (max-width: 599px) {
+        body {
+          background-color: red;
+        }
+      }
+
+      /* multiple conditions */
+
+      /* tablet devices upto small laptop */
+      @media screen and (min-width: 600px) and (max-width: 1200px) {
+        body {
+          background-color: bisque;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, hai</h1>
+  </body>
+</html>

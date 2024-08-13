@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        /* border: 2px solid black; */
+        height: 90vh;
+        background-color: bisque;
+      }
+      .nav {
+        border: 2px solid red;
+        height: 15vh;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .rem {
+        height: calc(90vh - 15vh);
+        /* background-color: blue; */
+        display: flex;
+        justify-content: space-around;
+      }
+      .st {
+        /* background-color: brown; */
+      }
+      .end {
+        /* background-color: blueviolet; */
+      }
+      .col {
+        /* border: 2px solid black; */
+        height: 90%;
+        width: 40%;
+      }
+      .col-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .row-1 {
+        height: 30%;
+        border: 2px solid black;
+      }
+      @media screen and (max-width: 599px) {
+        .rem {
+          flex-direction: column;
+        }
+        .col {
+          width: 90%;
+          margin-top: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>
+      <div class="box">
+        <div class="box-sm"></div>
+        <div class="box-sm"></div>
+      </div>
+      <div class="box">
+        <div class="box-sm"></div>
+        <div class="box-sm"></div>
+      </div>
+      <div class="box">
+        <div class="box-sm"></div>
+        <div class="box-sm"></div>
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="nav">
+        <div class="logo st">Huddle</div>
+        <div class="logo end">try free</div>
+      </div>
+      <div class="rem">
+        <div class="col-1 col">
+          <div class="col-12 row-1">content Heading</div>
+          <div class="col-12 row-1">paragraph</div>
+          <div class="col-12 row-1">button</div>
+        </div>
+        <div class="col-2 col">images</div>
+      </div>
+    </div>
+  </body>
+</html>

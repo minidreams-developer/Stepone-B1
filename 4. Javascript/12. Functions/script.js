@@ -132,12 +132,12 @@
 // addFunction(87, 33);
 
 // we can omit the block, if the body is single functionality or single line
-let addFunction = (numOne, numTwo) => numOne + numTwo;
+// let addFunction = (numOne, numTwo) => numOne + numTwo;
 
-console.log(addFunction(10, 10));
+// console.log(addFunction(10, 60));
 
-// we can omit paramter paranthesis if it only has single parameter
+// // we can omit paramter paranthesis if it only has single parameter
 
-let square = (num) => num * num;
+// let square = num => num * num;
 
-console.log(square(6));
+// console.log(square(6));

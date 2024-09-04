@@ -6,9 +6,11 @@
     let user = {
     name: "john",
     age: 40,
+    address: "chennai"
     key: value
     }
 
+    user.address = "chennai"
 */
 
 // Array => collection of data in sequential order
@@ -22,16 +24,16 @@
 
 // example
 let fruits = ["Apple", "Orange", "Mango"];
-// positions    [0]       [1]       [2]
+// positions    [0]       [1]       [2]  (index)
 // length       1         2         3
 // console.log("Fruits Array =>", fruits);
 
 // // Accessing  array elements by index
 // // syntax
 // // arrayName[index]
-// // console.log(fruits[0]);
-// // console.log(fruits[1]);
-// // console.log(fruits[2]);
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
 // console.log("length of fruits", fruits.length);
 
 // // example with loop
@@ -44,8 +46,8 @@ let fruits = ["Apple", "Orange", "Mango"];
 // in object we used dot (. notation)
 
 // 1. Add
-// arrayName[newIndex] = value
-// fruits[3] = "pineapple"
+// arrayName[nIndex] = value
+// fruits[3] = "pineapple"ew
 
 let subjects = ["English", "Maths", "Physics", "Chemistry"];
 
@@ -85,7 +87,7 @@ let mixArrays = [
   ["cricket", "football"], // 4
 ];
 
-// console.log("mixArrays=>", mixArrays);
+console.log("mixArrays=>", mixArrays);
 // console.log(mixArrays[4][1]);
 
 //=========================================================================
@@ -101,21 +103,21 @@ let mixArrays = [
 let books = ["tamil", "English", "Maths", "physics"];
 
 // pop() => remove last element from an array
-console.log("books array", books);
-console.log(books.pop());
-console.log("after removing", books);
+// console.log("books array", books);
+// console.log(books.pop());
+// console.log("after removing", books);
 
-// push() => add a last element from an array
-books.push("Biology", "chemistry");
-// console.log("After adding values", books);
-console.log("0 index", books[0]);
+// // push() => add a last element from an array
+// books.push("Biology", "chemistry");
+// // console.log("After adding values", books);
+// console.log("0 index", books[0]);
 
-// shift() => Remove first element in an array
-books.shift();
-console.log("After removing first element", books);
-console.log("0 index after shift", books[0]);
+// // shift() => Remove first element in an array
+// books.shift();
+// console.log("After removing first element", books);
+// console.log("0 index after shift", books[0]);
 
-//unshift() => Adding first element in an array
-books.unshift("Social science");
-console.log("after unshift", books);
-console.log("0 index after unshift", books[0]);
+// //unshift() => Adding first element in an array
+// books.unshift("Social science");
+// console.log("after unshift", books);
+// console.log("0 index after unshift", books[0]);

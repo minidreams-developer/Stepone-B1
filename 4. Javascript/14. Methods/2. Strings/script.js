@@ -19,7 +19,7 @@ let name = "john"; // string are immutable
 // syntax
 // string[position]
 
-let city = "chennaikkkkkgjjgjjgjjgjjgkkeijgiiejgjgii";
+let city = "chennai";
 // console.log("0 position of chennai", city[0]);
 // console.log("1 position of chennai", city[1]);
 // console.log("2 position of chennai", city[2]);
@@ -31,9 +31,9 @@ let city = "chennaikkkkkgjjgjjgjjgjjgkkeijgiiejgjgii";
 // console.log("length of chennai", city.length);
 
 // // // example
-// // for (let i = 0; i < city.length; i++) {
-// //   console.log("character of city", city[i]);
-// // }
+// for (let i = 0; i < city.length; i++) {
+//   console.log("character of city", city[i]);
+// }
 
 // console.log("last letter of chennai", city[city.length - 1]);
 
@@ -49,9 +49,9 @@ let city = "chennaikkkkkgjjgjjgjjgjjgkkeijgiiejgjgii";
 // string.toUpperCase()
 // string.toLowerCase()
 
-let country = "India";
-console.log("india in default", country);
-console.log("India in uppercase", country.toUpperCase());
+// let country = "India";
+// console.log("india in default", country);
+// console.log("India in uppercase", country.toUpperCase());
 
-country = "AMERICA";
-console.log(country.toLowerCase());
+// country = "AMERICA";
+// console.log(country.toLowerCase());

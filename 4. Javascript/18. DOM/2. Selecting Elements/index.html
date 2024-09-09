@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="DOM - Selectors" />
+    <title>DOM - Selectors</title>
+  </head>
+  <body>
+    <h2>DOM Selectors</h2>
+    <p id="para">This is a paragraph</p>
+    <ul id="list">
+      <li class="list-items">Home</li>
+      <li class="list-items">About</li>
+      <li class="list-items">Projects</li>
+      <li class="list-items">Contact</li>
+    </ul>
+    <hr />
+    <form action="#">
+      <p>
+        <label for="subjects">Select Subject</label>
+        <input
+          type="radio"
+          name="subject"
+          id="subject-1"
+          value="English"
+        />English
+        <input type="radio" name="subject" id="subject-2" value="Maths" />Maths
+        <input
+          type="radio"
+          name="subject"
+          id="subject-3"
+          value="Physics"
+        />Physics
+        <input
+          type="radio"
+          name="subject"
+          id="subject-4"
+          value="Chemistry"
+        />Chemistry
+      </p>
+    </form>
+    <script>
+      // For selecting an element, need to access document
+      /*
+
+        document = {
+
+                html
+      head                Body
+                            |
+                            |
+                      ---------------_
+                      h1          forms
+                                    input
+          }
+
+      */
+
+      // Selecting elements DOM selectors
+      // syntax
+      // 1. document.getElementById('id')
+      // 2. document.getElementsByClassName('class')
+      // 3. document.getElementsByTagName('tag')
+      // 4. document.getElementsByName('name')
+
+      // 5. document.querySelector('query')
+      // 6. document.querySelectorAll('query')
+
+      // -------------------------------------------
+      // 1. get by id
+      // syntax
+      // document.getElementById('idName') => return HTML Element
+      let para = document.getElementById("para");
+      console.log(para);
+      console.log(para.id);
+      console.log(para.textContent);
+
+      // 2. get by class
+      // syntax
+      // document.getElementsByClassName('class') => return array like elements
+      let listItems = document.getElementsByClassName("list-items");
+      console.log(listItems);
+      console.log(listItems[0]);
+      console.log(listItems[1]);
+      console.log(listItems[2]);
+      console.log(listItems[3]);
+
+      // loops while, do..while, for(::;)
+      // for...of
+      // let number = [3, 52, 523, 9, 2, 0, 235, 3];
+
+      // for (let i = 0; i < number.length; i++) {
+      //   console.log(number[i]);
+      // }
+
+      // // for (const num of number){
+      // //      console.log(num)
+      // //      }
+
+      console.log("------------------for of loop---------------");
+      // for (const num of number) {
+      //   console.log(num);
+
+      for (const list of listItems) {
+        console.log(list.textContent);
+      }
+    </script>
+  </body>
+</html>

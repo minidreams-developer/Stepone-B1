@@ -1,5 +1,7 @@
 // String Methods
 // sub-string => part of a string [single or group of character]
+// let name = 'john';
+
 // 'john' => j substring, o substring, jo substring, hn substring, ohn substring.
 
 // Hello, i am boopathi.
@@ -16,24 +18,24 @@
 // b => search start position
 
 let welcome = "Hello, World";
-// console.log("search substring", welcome.indexOf("World", 8));
-// console.log("find without starting pos", welcome.indexOf("World"));
+// console.log("search substring", welcome.indexOf("World", 5));
+// console.log("find without starting pos", welcome.indexOf("xj"));
 
 // String.lastIndexOf(substring, start pos)
-// console.log("search from last index", welcome.lastIndexOf("World", 6));
+// console.log("search from last index", welcome.lastIndexOf("World"));
 
-// // 2. string.includes(substring, pos) => true/false
-// console.log("search based on includes", welcome.includes("lo", 3));
+// // // 2. string.includes(substring, pos) => true/false
+// console.log("search based on includes =>", welcome.includes("kk"));
 
-//3. String.startsWith(substring, pos)
-// console.log("search based on startswith", welcome.startsWith("ello"));
+// //3. String.startsWith(substring, pos)
+// console.log("search based on startswith", welcome.startsWith("Hello"));
 
-// 4. string.endsWith(substring, pos)
-console.log("search based on ends with", welcome.endsWith("d"));
+// // 4. string.endsWith(substring, pos)
+// console.log("search based on ends with", welcome.endsWith("d"));
 
 // Getting a substring
 // Slice(a, b)
 // a => start pos
 // b => end pos
 
-console.log("Slice based on pos", welcome.slice(0, 8));
+// console.log("Slice based on pos", welcome.slice(0, 6));

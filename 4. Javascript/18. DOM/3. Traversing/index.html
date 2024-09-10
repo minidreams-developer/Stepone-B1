@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traversing</title>
+  </head>
+  <body>
+    <h2>Traversing</h2>
+    <ul id="list">
+      <li class="list-items">Home</li>
+      <li class="list-items">About</li>
+      <li class="list-items">Projects</li>
+      <li class="list-items">Awards</li>
+      <li class="list-items">Contact</li>
+    </ul>
+
+    <script>
+      // Traversing elements
+      // 1. Child to Parent
+      // parentNode
+      // 2. Parent to Child
+      // firstElementChild
+      // lastElementChild
+      // children
+      // 3. Siblings
+      // previousElementSibling
+      // nextElementSibling
+
+      // overall
+      // textContent
+      // id, class
+
+      // 1. Child to Parent
+      let projects = document.querySelectorAll(".list-items")[2];
+      console.log(projects);
+
+      // parentNode
+      //   console.log(projects.parentNode);
+
+      console.log("=========Parent to Child============");
+      // 2. Parent to Child
+      let list = document.querySelector("#list");
+      //   console.log(list);
+      //   console.log("---first element child---");
+      //   console.log(list.firstElementChild);
+      //   console.log("----last element child----");
+      //   console.log(list.lastElementChild);
+      //   console.log("----children-------");
+      //   console.log(list.children);
+
+      console.log("=========Sibling============");
+      // 3. Siblings
+      let siblingOne = document.querySelectorAll(".list-items")[2];
+      console.log(siblingOne);
+      console.log("------previous sibling---------");
+      console.log(siblingOne.previousElementSibling);
+      console.log("-------next sibling-----------");
+      console.log(siblingOne.nextElementSibling);
+    </script>
+  </body>
+</html>

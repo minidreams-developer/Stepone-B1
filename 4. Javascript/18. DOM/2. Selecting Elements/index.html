@@ -58,6 +58,19 @@
 
       */
 
+      // nodes
+      /*
+        let user = {
+
+        name: john,
+        age: 23,
+        country: india,
+        some....
+
+        }
+      
+      */
+      // Methods
       // Selecting elements DOM selectors
       // syntax
       // 1. document.getElementById('id')
@@ -73,19 +86,28 @@
       // syntax
       // document.getElementById('idName') => return HTML Element
       let para = document.getElementById("para");
-      console.log(para);
-      console.log(para.id);
-      console.log(para.textContent);
+      console.log(para); // <p id="para">This is a paragraph</p>
+      console.log(para.id); // para
+      console.log(para.textContent); // This is a paragraph
+      //-------------------------------------
 
       // 2. get by class
       // syntax
       // document.getElementsByClassName('class') => return array like elements
       let listItems = document.getElementsByClassName("list-items");
-      console.log(listItems);
-      console.log(listItems[0]);
-      console.log(listItems[1]);
-      console.log(listItems[2]);
-      console.log(listItems[3]);
+      // console.log(listItems);
+      /*
+         [  <li class="list-items">Home</li>,
+      <li class="list-items">About</li>,
+      <li class="list-items">Projects</li>,
+      <li class="list-items">Contact</li>
+
+    ]
+      */
+      // console.log(listItems[0]);
+      // console.log(listItems[1]);
+      // console.log(listItems[2]);
+      // console.log(listItems[3]);
 
       // loops while, do..while, for(::;)
       // for...of
@@ -103,8 +125,30 @@
       // for (const num of number) {
       //   console.log(num);
 
-      for (const list of listItems) {
-        console.log(list.textContent);
+      // for (const list of listItems) {
+      //   console.log(list.textContent);
+      // }
+
+      // 3. Get by tag name
+      // document.getElementsByTagName('tagname') => array of elements
+      let liList = document.getElementsByTagName("li");
+      console.log(liList);
+
+      console.log("=============get by query selector==========");
+      // 4. query selector
+      // document.querySelector("css selector")
+      let heading = document.querySelector("#para");
+      console.log(heading);
+      console.log(heading.id);
+      console.log(heading.textContent);
+      console.log("=============get by query selector==========");
+
+      // 5. query selector All
+      let listItem = document.querySelectorAll("#list .list-items");
+      console.log(listItem);
+      for (const li of listItem) {
+        console.log(li);
+        console.log(li.textContent);
       }
     </script>
   </body>

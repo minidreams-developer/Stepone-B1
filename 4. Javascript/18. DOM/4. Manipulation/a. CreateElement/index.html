@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulation - CreateElement</title>
+  </head>
+  <body>
+    <h2 id="head">createElement</h2>
+
+    <script>
+      //   let head = document.querySelector("#head");
+      //   console.log("total element => ", head);
+      //   console.log("getting id =>", head.id);
+      //   console.log("getting content =>", head.textContent);
+      // createElement()
+      // Syntax
+      // document.createElement('tagName')
+      let h2 = document.createElement("h2"); // <h2> </h2>
+      //   console.log("0 - this is h2 =>", h2);
+      //   h2.textContent = "This is a heading";
+      //   console.log("1 - this is h2 =>", h2);
+      //---------------------------------------------------------
+      // createTextNode()
+      let value = prompt("What's your name?");
+      let text = document.createTextNode(`Hi ${value}, Welcome to stepOne`);
+      console.log("text node =>", text);
+      h2.appendChild(text);
+      console.log("1 - this is h2 =>", h2);
+      h2.id = "demo";
+      h2.className = "heading";
+
+      // <h2 id="demo" class="heading"> This is second heading </h2>
+      // appending in the body
+      document.body.appendChild(h2);
+    </script>
+  </body>
+</html>

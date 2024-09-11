@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append child</title>
+  </head>
+  <body>
+    <h2>appendChild</h2>
+    <ul id="list"></ul>
+    <button id="btn">Click</button>
+
+    <script>
+      // appendChild()
+      let listItems = ["Home", "About", "Project", "Contact"];
+      let list = document.querySelector("#list");
+      // li tag creation
+      // value add to each list
+      // append to ul
+
+      function addChildItems(listText) {
+        let li = document.createElement("li"); // creating tag
+        li.className = "list-items"; // adding class
+        li.textContent = listText; // adding dynamic value
+        list.appendChild(li); // append to ul
+      }
+
+      let btn = document.querySelector("#btn");
+      // addEventListener("event", ()=>{})
+      // forEach loop
+      // array.forEach((list)=>{})
+
+      btn.addEventListener("click", () => {
+        listItems.forEach((list) => {
+          addChildItems(list);
+        });
+      });
+    </script>
+  </body>
+</html>

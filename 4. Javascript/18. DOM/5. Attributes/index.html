@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attributes</title>
+  </head>
+  <body>
+    <h2>DOM - Attributes</h2>
+    <p id="para">This is a Paragraph</p>
+    <button id="btn">Button</button>
+    <script>
+      // get html
+      // access it's attributes via dot notation.
+
+      // 1. setAttribute()
+      // 2. getAttribute()
+      // 3. removeAttribute()
+      // 4. hasAttribute()
+
+      // setAttribute()
+      // syntax
+      // element.setAttribute("key", 'value')
+      let para = document.querySelector("#para");
+      para.setAttribute("class", "demo");
+      console.log(para);
+
+      // element.getAttribute("key")
+      console.log(para.getAttribute("id"));
+
+      // element.removeAttribute('key')
+      para.removeAttribute("id");
+      console.log("after removed", para);
+
+      // element.hasAttribute('key')
+      console.log(para.hasAttribute("id"));
+    </script>
+  </body>
+</html>

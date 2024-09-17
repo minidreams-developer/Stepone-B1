@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB API - intro</title>
+  </head>
+  <body>
+    <h2>LocalStorage</h2>
+
+    <script>
+      // Web api - intro
+      // 1. localStorage
+      // 2. sessionStorage
+      // fetch API
+
+      // localStorage
+      // accessing localStorage
+      // window.localStorage
+      // console.log("localStorage=>", window.localStorage);
+
+      // Methods and Properties
+      // 1. setItem("key", "value")
+      // 2. getItem("key")
+      // 3. removeItem("key")
+      // 4. clear()
+      // 5. length
+
+      // Adding data
+      localStorage.setItem("username", "john");
+      localStorage.setItem("age", 25);
+      localStorage.setItem("city", "chennai");
+
+      // Access Value
+      console.log("getting value=>", localStorage.getItem("username"));
+      console.log("getting no-value=>", localStorage.getItem("state"));
+
+      // Remove Data
+      localStorage.removeItem("city");
+      localStorage.removeItem("age");
+
+      // Remove all data
+      localStorage.clear();
+
+      //---------------------------------------------------------
+      let john = {
+        name: "john",
+        age: 25,
+        city: "chennai",
+      };
+      localStorage.setItem("john", JSON.stringify(john));
+      console.log("localStorage=>", localStorage);
+
+      let value = localStorage.getItem("john");
+      console.log("john plain =>", value);
+      console.log("john parsed =>", JSON.parse(value));
+
+      // JSON.stringify('object')
+      // JSON.parse('stringed object')
+    </script>
+  </body>
+</html>

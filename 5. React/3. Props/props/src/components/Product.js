@@ -1,4 +1,5 @@
 import React from "react";
+import assetImg from "../../assets/New-assignment.jpg";
 
 const Product = (props) => {
   let {
@@ -22,7 +23,7 @@ const Product = (props) => {
       <h2>Product Title: {productTitle}</h2>
       <p>Product Description: {productDes} </p>
       <p>
-        <img src={productImage} alt={productTitle} height={100} width={100} />
+        <img src={assetImg} alt={productTitle} height={100} width={100} />
       </p>
       <p>Product Rating: {productRating} </p>
       <p>Product Count: {productCount} </p>
